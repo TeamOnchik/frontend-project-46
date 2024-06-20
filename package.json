@@ -5,13 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --coverage"
-  },
-  "jest": {
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ]
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --bail --coverage"
   },
   "author": "Myagkov Dima",
   "license": "ISC",
