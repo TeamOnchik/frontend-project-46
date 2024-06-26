@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import _ from 'lodash';
+
 const buildAST = (data1, data2) => {
   const data1Keys = _.keys(data1);
   const data2Keys = _.keys(data2);

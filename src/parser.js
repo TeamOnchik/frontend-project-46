@@ -5,11 +5,11 @@ const parser = (data, format) => {
     case 'json':
       return JSON.parse(data);
     case 'yml':
-       return ymal.load(data);
+      return ymal.load(data);
     case 'yaml':
-       return ymal.load(data);
+      return ymal.load(data);
     default:
-       throw new Error(`Invalid format: ${format}`);
+      throw new Error(`Invalid format: ${format}`);
   }
 };
 
