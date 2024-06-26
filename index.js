@@ -22,7 +22,6 @@ const genDiff = (filepath1, filepath2, format = 'stylish') => {
 
   const result = getDifferenceTree(parseObj1, parseObj2);
   return formatter(result, format);
-
 };
 
 export default genDiff;
