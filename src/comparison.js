@@ -20,29 +20,29 @@ const buildAST = (data1, data2) => {
         value: data1[key],
       };
     } if (_.isPlainObject(data1[key]) && _.isPlainObject(data2[key])) {
-        return {
-          type: 'nested',
-          key,
-          children: buildAST(data1[key], data2[key]),
-        };
-      }
-      if (_.isEqual(data1[key], data2[key])) {
-        return {
-          type: 'unchanged',
-          key,
-          value: data2[key],
-        };
-      }
       return {
-        type: 'changed',
+        type: 'nested',
         key,
-        value: data1[key],
-        value2: data2[key],
+        children: buildAST(data1[key], data2[key]),
       };
+    }
+    if (_.isEqual(data1[key], data2[key])) {
+      return {
+        type: 'unchanged',
+        key,
+        value: data2[key],
+      };
+    }
+    return {
+      type: 'changed',
+      key,
+      value: data1[key],
+      value2: data2[key],
+    };
   });
   return children;
 };
-  
+
 const compareFiles = (data1, data2) => ({
   type: 'root',
   children: buildAST(data1, data2),

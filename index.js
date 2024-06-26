@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { readFileSync } from 'fs';
-import parser from './src/parser.js';
 import path from 'path';
+import parser from './src/parser.js';
 import getDifferenceTree from './src/comparison.js';
 import formatter from './src/formatter/index.js';
 
