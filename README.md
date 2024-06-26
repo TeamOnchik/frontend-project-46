@@ -1,9 +1,9 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/TeamOnchik/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/TeamOnchik/frontend-project-46/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/ae7bbdd5a8a3cd7bf849/maintainability)](https://codeclimate.com/github/TeamOnchik/frontend-project-46/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8fe364a51acb1f2bbc8d/maintainability)](https://codeclimate.com/github/TeamOnchik/frontend-project-46/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/ae7bbdd5a8a3cd7bf849/test_coverage)](https://codeclimate.com/github/TeamOnchik/frontend-project-46/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8fe364a51acb1f2bbc8d/test_coverage)](https://codeclimate.com/github/TeamOnchik/frontend-project-46/test_coverage)
 
 
 ### Description of utility:
